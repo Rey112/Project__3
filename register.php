@@ -1,26 +1,13 @@
 <?php require('header.php');?>
 
 <?php
-    //$firstName = filter_input(INPUT_POST, 'firstName');
-    //$lastName = filter_input(INPUT_POST, 'lastName');
-    //$birthday = filter_input(INPUT_POST, 'birthday');
-    //$email = filter_input(INPUT_POST, 'email');
-    //$password = filter_input(INPUT_POST, 'password');
+    $firstName = filter_input(INPUT_POST, 'firstName');
+    $lastName = filter_input(INPUT_POST, 'lastName');
+    $birthday = filter_input(INPUT_POST, 'birthday');
+    $email = filter_input(INPUT_POST, 'email');
+    $password = filter_input(INPUT_POST, 'password');
 
-    if(isset($_POST['register'])) {
-        if(isset($_POST['firstName'])
-        && isset($_POST['lastName'])
-        && isset($_POST['birthday'])
-        && isset($_POST['email'])
-        && isset($_POST['password'])) {
-            $firstName = $_POST['firstName'];
-            $lastName = $_POST['lastName'];
-            $birthday = $_POST['birthday'];
-            $email = $_POST['email'];
-            $password = $_POST['password'];
-        }
-    }
-
+    
     if(strlen($password) < 8) {
         echo 'Password should be at least 8 characters';
     }
