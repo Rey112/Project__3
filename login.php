@@ -21,8 +21,6 @@
         <div style="text-align: center"><input type="submit" value="Submit"></div>
         <br><br>
         <div style="text-align: center"><a href="registration.php">Register</a></div>
-        <br>
-        <div style="text-align: center"><a href="question_form.php">Question Form: </a></div>
     </form>
 
 </body>
